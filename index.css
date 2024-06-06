@@ -1,0 +1,100 @@
+body{
+    background-image: url("./img/R.jpg");
+    background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+}
+.container{
+  position: relative;
+  padding: 0px 60px 60px 0px;
+}
+.box{
+    float: left;
+}
+
+.box1{
+    width: 100px;
+    height: 100px ;
+    background-color: rgb(25, 200, 235);
+   
+    position: absolute; 
+    animation-name: move;
+    animation-duration: 7s;
+    animation-fill-mode: forwards;
+    border-radius: 50%;
+    right: 0px;
+    animation-timing-function: linear;
+    
+}
+.boxs{
+    float:right;
+}
+.section{  
+    padding: 10%  0px; 
+    margin: 10px;
+    position: relative;}
+.box-brid{
+    width: 100px;
+    height: 100px ;
+    
+   
+    position: absolute; 
+    animation-name: move2;
+    animation-duration: 7s;
+    animation-fill-mode: forwards;
+    animation-delay: 7s;
+    border-radius: 50%;
+    
+    /* animation-direction: reverse;        */
+    animation-timing-function: linear;
+    left:  0px;
+}
+.box3{
+      width: 100px;
+        height: 100px ;
+        
+        animation-name: move;
+        position: absolute;
+        animation-duration: 6s;
+        animation-fill-mode: forwards;
+       
+        animation-delay: 14s;
+         border-radius: 50%;
+        animation-timing-function: linear;   
+         right: 0px;
+     }
+.section2{
+    padding: 12% 0px;
+    margin: 10px;
+    position: relative;
+}
+
+
+@keyframes move{
+    0%{ 
+       
+    }
+    50%{ 
+        left: calc(100% - 200px);
+       
+    }
+    100%{
+
+    left: 0px;
+    }
+
+}
+@keyframes move2{
+    0%{ 
+       
+    }
+    50%{ 
+        right: calc(100% - 150px);
+    }
+    100%{
+        left:92%
+
+       
+    }
+
+}
